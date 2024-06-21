@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="../Practica2ChatRMI-Web/target/classes">
+    <fileset dir="C:\ProgramData\Practica2ChatRMI\target/classes"/>
+  </copy>
+</target>
+</project>

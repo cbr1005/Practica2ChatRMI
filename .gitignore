@@ -1,0 +1,14 @@
+# Ignorar directorios de compilación
+/target/
+/build/
+
+# Ignorar todos los archivos .class
+*.class
+
+# Archivos específicos de configuración del IDE
+/.vscode/
+/.idea/
+*.iml
+
+# Archivos de configuración específicos del sistema
+.DS_Store

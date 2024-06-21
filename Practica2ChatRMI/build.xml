@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="Practica2ChatRMI" default="javadoc" basedir=".">
+    <!-- Define las propiedades del proyecto -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="doc.dir" value="doc"/>
+
+    <!-- Define los puntos de entrada para Ant -->
+    <target name="init">
+        <!-- Crea el directorio para los documentos JavaDoc si no existe -->
+        <mkdir dir="${doc.dir}"/>
+    </target>
+
+    <target name="javadoc" depends="init">
+        <!-- Genera la documentación JavaDoc -->
+        <javadoc destdir="${doc.dir}" author="true" version="true" use="true">
+            <fileset dir="${src.dir}" includes="**/*.java"/>
+        </javadoc>
+    </target>
+</project>
